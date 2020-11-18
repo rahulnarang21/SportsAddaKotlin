@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_label"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="15dp"
+        android:text="@string/select_tenure"
+        android:background="@color/colorPrimary"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_view_color" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/list_view"
+        android:layout_marginBottom="2dp"
+        android:scrollbars="none"/>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/ok_btn"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:text="OK"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:textSize="17sp"-->
+    <!--android:paddingStart="15dp"-->
+    <!--android:paddingEnd="15dp"-->
+    <!--android:paddingTop="7dp"-->
+    <!--android:paddingBottom="7dp"-->
+    <!--android:layout_margin="12dp"-->
+    <!--android:layout_below="@+id/list_view"-->
+    <!--android:visibility="gone"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_plan_btn"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        >
+
+        <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/refundable_deposit"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:text="Refundable Deposit Rs 300"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:textSize="15sp"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="12dp"-->
+        <!--/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/refundable_deposit"
+            android:padding="6dp"
+            android:background="@color/divider_view_color"
+            android:textColor="@color/success_green_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/book_plan_btn_label"
+            android:text="@string/book_your_plan"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</LinearLayout>

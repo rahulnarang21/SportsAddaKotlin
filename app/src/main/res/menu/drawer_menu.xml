@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_select_city_btn"
+            android:icon="@drawable/ic_action_location"
+            android:title="Select City" />
+
+        <item
+            android:id="@+id/my_orders"
+            android:icon="@drawable/ic_library_books"
+            android:title="My Orders" />
+
+        <item
+            android:id="@+id/my_addresses"
+            android:icon="@drawable/ic_action_location"
+            android:title="My Addresses" />
+
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_call"
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/nav_email_us"
+            android:icon="@drawable/ic_email"
+            android:title="Email Us" />
+
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/ic_star_rate"
+            android:title="Rate Us" />
+
+        <item
+            android:id="@+id/nav_documents"
+            android:icon="@drawable/ic_action_document"
+            android:title="Documents Required" />
+
+        <item
+            android:id="@+id/nav_shipping_policy"
+            android:icon="@drawable/ic_local_shipping"
+            android:title="Shipping Policy" />
+
+        <item
+            android:id="@+id/nav_terms_and_conditions"
+            android:icon="@drawable/ic_dehaze"
+            android:title="Rental Terms" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_card"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="3dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/cart_product_image"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_name"
+                android:layout_below="@+id/cart_product_image"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Canon 1300D DSLR"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/divider"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/divider_view_color"
+                android:layout_below="@+id/product_name"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_starting_price"
+                android:layout_below="@+id/divider"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:textSize="13sp"
+                android:textColor="@android:color/black"
+                android:text="Starting from र499"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

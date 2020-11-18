@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/cart_product_image"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/default_global_image"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_name"
+        android:layout_below="@+id/cart_product_image"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/shipping_charges"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/heading_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shipping_charges"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/subheading_size"
+        android:textColor="@color/seagreen_color"
+        android:layout_alignBaseline="@+id/product_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_tenure_label"
+        android:layout_below="@+id/product_name"
+        android:text="@string/tenure_label"
+        android:textSize="@dimen/subheading_size"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_tenure"
+        android:textSize="@dimen/subheading_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/product_tenure_label"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refundable_deposit_label"
+        android:layout_below="@+id/product_tenure_label"
+        android:text="@string/deposit"
+        android:textAllCaps="true"
+        android:textSize="@dimen/subheading_size"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refundable_deposit"
+        android:textSize="@dimen/subheading_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/refundable_deposit_label"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_rent_label"
+        android:layout_below="@+id/refundable_deposit_label"
+        android:text="@string/rent_label"
+        android:textSize="@dimen/subheading_size"
+        android:textAllCaps="true"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_rent"
+        android:textSize="@dimen/subheading_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/product_rent_label"/>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/shipping_charges_label"-->
+    <!--android:layout_below="@+id/product_rent_label"-->
+    <!--android:text="@string/shipping_charges_label"-->
+    <!--android:textSize="@dimen/subheading_size"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:textAllCaps="true"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/shipping_charges"-->
+    <!--android:textSize="@dimen/subheading_size"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignBaseline="@+id/shipping_charges_label"/>-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/incr_decr_layout"
+        android:layout_below="@+id/product_rent_label"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/increment_decrement_back"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/decrement_products_btn"
+            android:src="@drawable/ic_action_minus"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toolbar_selection"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_qty"
+            android:layout_toEndOf="@+id/decrement_products_btn"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:text="0"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/increment_products_btn"
+            android:layout_toEndOf="@+id/product_qty"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_add_black"
+            android:background="@drawable/toolbar_selection"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_end_color"
+        android:layout_below="@+id/incr_decr_layout"
+        android:layout_margin="12dp" />
+
+</RelativeLayout>

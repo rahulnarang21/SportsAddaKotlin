@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Sportsadda</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Common Strings-->
+    <string name="apply">Apply</string>
+    <string name="rupees_symbol_label">र</string>
+    <string name="rupees_symbol">र %d</string>
+    <string name="after_money_symbol">/-</string>
+    <string name="no_results_string">No Results found!</string>
+    <string name="zero_string">0</string>
+    <string name="something_went_wrong">Something went wrong\n please try again later</string>
+
+    <string name="starting_from_price">Starting from </string>
+
+    <string name="no_products_string">No Prodcuts found!</string>
+
+    <string name="facebook_app_id">910591089110748</string>
+    <string name="fb_login_protocol_scheme">fb910591089110748</string>
+
+    <string name="sign_up_link"><u>New User? Sign Up</u></string>
+
+    <!--city strings-->
+    <string name="select_your_city">Select your city</string>
+
+    <!--Product strings-->
+    <string name="description">Description</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+
+    <!--Cart Strings-->
+    <plurals name="no_of_items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <string name="concatenate_rs_string">Rs %s</string>
+    <string name="cart">Cart</string>
+    <string name="rent_label">Rent</string>
+    <string name="tenure_label">tenure</string>
+    <string name="deposit">deposit</string>
+
+    <!--Promo Codes-->
+    <string name="apply_promo_code">Apply Coupon Code</string>
+    <string name="view_promocodes">View PromoCodes</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="total_rent">Total Rent</string>
+    <string name="total_deposit">Total Deposit</string>
+    <string name="gst_18">GST (18%)</string>
+    <string name="shipping_charges_label">Shipping Charges</string>
+    <string name="coupon_discount">Coupon Discount</string>
+    <string name="total_payout">Total Payout</string>
+    <string name="proceed_to_checkout">Proceed To Checkout</string>
+    <string name="select_delivery_date">Select Delivery Date</string>
+
+
+    <!--Tenure Strings-->
+    <string name="choose_your_tenure">Choose your tenure</string>
+    <string name="select_tenure">Select your tenure</string>
+    <string name="book_your_plan">Book your Plan</string>
+
+    <string name="dismiss">Dismiss</string>
+
+    <!--Payment Details-->
+    <string name="delivery_date_label">Delivery Date</string>
+
+    <!--Order Strings-->
+    <string name="my_orders">My Orders</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="more_items">(%d more)</string>
+    <string name="delivery_date">Delivery Date: %s</string>
+    <string name="order_id">Order ID: %s</string>
+    <string name="total_amount">Total Amount: %s</string>
+    <string name="rent">Rent: %d</string>
+    <string name="rent_duration">Duration: %1$d %2$s</string>
+    <string name="quantity">Qty: %d</string>
+    <string name="shipping_charges">Shipping: %s</string>
+    <string name="order_details">Orders Details</string>
+    <string name="add_update_select_delivery_address">%s Delivery Address</string>
+    <string name="add_update_address_btn">%s Address</string>
+    <string name="please_wait_place_order">Please wait while we are placing your order..</string>
+    <string name="please_wait_deleting_address">Please wait while deleting address..</string>
+    <string name="please_wait">Please wait..</string>
+    <string name="rs_string">Rs %d</string>
+    <string name="continue_pay">Continue to Pay Rs %.2f</string>
+    <string name="products_label">Products</string>
+    <string name="login_with_google">Login with Google+</string>
+    <string name="login_with_facebook">Login with facebook</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="_sure_logout_confirm">Arr you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="logging_out">Logging Out</string>
+    <string name="your_cart_is_empty_start_renting">Your cart is empty! Start Renting..</string>
+    <string name="select_delivery_date_and_proceed">Select Delivery Date and Proceed</string>
+
+</resources>

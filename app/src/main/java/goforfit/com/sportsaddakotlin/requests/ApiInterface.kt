@@ -23,7 +23,7 @@ interface ApiInterface {
 
     @FormUrlEncoded
     @POST(AppConfig.GET_HOME_PAGE_ITEMS)
-    suspend fun getHomePageItems(@Field(AppConfig.CITY_ID) cityId:String?):Response<HomePageResponseModel>
+    fun getHomePageItems(@Field(AppConfig.CITY_ID) cityId:String?):Call<HomePageResponseModel>
 
     @FormUrlEncoded
     @POST(AppConfig.GET_PRODUCTS_URL)

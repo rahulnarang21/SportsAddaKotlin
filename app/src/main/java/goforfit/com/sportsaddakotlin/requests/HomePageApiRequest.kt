@@ -18,9 +18,9 @@ class HomePageApiRequest(val context: Context, val responseListener: ResponseLis
 
     fun hitRequest(){
         val apiInterface = ApiClient.buildService(ApiInterface::class.java)
-//        val apiCall:Call<HomePageResponseModel> =
-//            apiInterface.getHomePageItems(Utility.getSharedPrefs(context)?.getString(AppConfig.CITY_ID,""))
-//        apiCall.enqueue(this)
+        val apiCall:Call<HomePageResponseModel> =
+            apiInterface.getHomePageItems(Utility.getSharedPrefs(context)?.getString(AppConfig.CITY_ID,""))
+        apiCall.enqueue(this)
 
     }
 

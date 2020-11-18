@@ -79,18 +79,18 @@ class MainActivity : AppCompatActivity(), ResponseListener, NavigationView.OnNav
         bannersViewPagerAdapter = ViewPagerAdapter(this,bannersImagesArrayList)
         banner_images_view_pager.adapter = bannersViewPagerAdapter
 
-//        HomePageApiRequest(this,this,progress_bar).hitRequest()
+        HomePageApiRequest(this,this,progress_bar).hitRequest()
 
-        loadItems()
-
-
-        tab_dots.setupWithViewPager(banner_images_view_pager, true);
-
-        scrollSmooth();
+//        loadItems()
 
 
-        setCategoryRecyclerView();
-        setPackagesRecyclerView();
+        tab_dots.setupWithViewPager(banner_images_view_pager, true)
+
+        scrollSmooth()
+
+
+        setCategoryRecyclerView()
+        setPackagesRecyclerView()
 
 
         //loadCategories();
@@ -121,7 +121,7 @@ class MainActivity : AppCompatActivity(), ResponseListener, NavigationView.OnNav
 
         refresh_layout.setOnRefreshListener(this)
 
-        showCart();
+        showCart()
 
 
     }
@@ -211,36 +211,36 @@ class MainActivity : AppCompatActivity(), ResponseListener, NavigationView.OnNav
         }
     }
 
-    private fun loadItems(){
-        lifecycleScope.launch {
-            val apiInterface = ApiClient.buildService(ApiInterface::class.java)
-            val call = apiInterface.getHomePageItems(sharedPreferences?.getString(AppConfig.CITY_ID, ""))
-            progress_bar.visibility = View.GONE
-            if (call.isSuccessful) {
-                val obj = call.body()!!
-                if (obj.statusCode == AppConfig.SUCCESS_CODE) {
-                    progressDialog!!.dismiss()
-                    categories_and_packages_layout.visibility = View.VISIBLE
-                    bannersImagesArrayList.clear()
-                    categoriesArrayList.clear()
-                    packagesArrayList.clear()
-                    val response = obj.response
-                    bannersImagesArrayList.addAll(response.bannersList)
-                    NUM_PAGES = bannersImagesArrayList.size
-                    bannersViewPagerAdapter?.notifyDataSetChanged()
-                    changeSliderImage()
-
-                    categoriesArrayList.addAll(response.categoryArrayList)
-                    categoriesRecyclerAdapter?.notifyDataSetChanged()
-
-                    packagesArrayList.addAll(response.packagesArrayList)
-                    packagesRecyclerAdapter?.notifyDataSetChanged()
-
-                    refresh_layout.isRefreshing = false
-                }
-            }
-        }
-    }
+//    private fun loadItems(){
+//        lifecycleScope.launch {
+//            val apiInterface = ApiClient.buildService(ApiInterface::class.java)
+//            val call = apiInterface.getHomePageItems(sharedPreferences?.getString(AppConfig.CITY_ID, ""))
+//            progress_bar.visibility = View.GONE
+//            if (call.isSuccessful) {
+//                val obj = call.body()!!
+//                if (obj.statusCode == AppConfig.SUCCESS_CODE) {
+//                    progressDialog!!.dismiss()
+//                    categories_and_packages_layout.visibility = View.VISIBLE
+//                    bannersImagesArrayList.clear()
+//                    categoriesArrayList.clear()
+//                    packagesArrayList.clear()
+//                    val response = obj.response
+//                    bannersImagesArrayList.addAll(response.bannersList)
+//                    NUM_PAGES = bannersImagesArrayList.size
+//                    bannersViewPagerAdapter?.notifyDataSetChanged()
+//                    changeSliderImage()
+//
+//                    categoriesArrayList.addAll(response.categoryArrayList)
+//                    categoriesRecyclerAdapter?.notifyDataSetChanged()
+//
+//                    packagesArrayList.addAll(response.packagesArrayList)
+//                    packagesRecyclerAdapter?.notifyDataSetChanged()
+//
+//                    refresh_layout.isRefreshing = false
+//                }
+//            }
+//        }
+//    }
 
 
     override fun onResponse(obj: Any?) {
@@ -321,8 +321,8 @@ class MainActivity : AppCompatActivity(), ResponseListener, NavigationView.OnNav
     }
 
     override fun onRefresh() {
-        loadItems()
-//        HomePageApiRequest(this,this,progress_bar).hitRequest()
+//        loadItems()
+        HomePageApiRequest(this,this,progress_bar).hitRequest()
     }
 
     override fun onResume() {
